@@ -1,21 +1,21 @@
 package unogame;
 
 public class Card2 {
-    public enum Color {RED, ORANGE, GREEN, BLUE};
-    public enum Value1{ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT,NINE, SkIP, REVERSE, DRAW_TWO, WILD_DRAW};
+public enum Color {RED, ORANGE, GREEN, BLUE};
+    public enum Value{ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, SkIP, REVERSE, DRAW_TWO};
     private final Color color;
-    private final Value1 value1;
-    public Card2(Color c, Value1 gVal)
-        {
-           color = c;
-           value1= gVal;
-        }
-  
-	public Value1 getValue1() {
-		return this.value1;
-	}
+    private final Value value;
+    public Card2(Color c, Value gVal)
+    {
+        color = c;
+        value= gVal;
+    }
+
+    public Value getValue() {
+        return this.value;
+    }
 
     public Color getColor() {
-		return this.color;
-        }
+        return this.color;
+    }
 }
